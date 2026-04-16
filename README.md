@@ -1,4 +1,8 @@
-# Next.js Mini Kanban Board
+# Next.js Mini Kanban Board 
+
+## Deployed Link
+
+https://kanban-bored-by-om.vercel.app/
 
 A professional Kanban board application designed to manage tasks through a streamlined workflow. This project is built with Next.js (App Router), focusing on clean code, performance, and a robust user experience.
 
