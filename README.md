@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Mini Kanban Board
+
+A professional Kanban board application designed to manage tasks through a streamlined workflow. This project is built with Next.js (App Router), focusing on clean code, performance, and a robust user experience.
+
+## Objective
+
+The primary objective of this application is to provide a Trello-like interface where users can manage task cards across different stages of a workflow, specifically: Pending, In Progress, and Completed.
+
+## Features
+
+### Core Functionality
+- Create Card: Add new tasks with a title and description, which automatically appear in the Pending column.
+- View Board: A three-column layout (Pending, In Progress, Completed) to track task status.
+- Move Cards: Functionality to transition cards between workflow stages.
+- Edit Card: Inline editing for card titles and descriptions.
+- Delete Card: Remove cards with a confirmation step to ensure data safety.
+
+### Bonus Features Implemented
+- Drag and Drop: Native HTML5 Drag and Drop API integration for intuitive card movement.
+- Data Persistence: Automatic state preservation using browser localStorage.
+- Optimistic UI: Immediate interface updates for a zero-latency user experience.
+- Search and Filter: Real-time filtering to locate specific tasks by title or content.
+
+## Tech Stack
+
+- Framework: Next.js (App Router) 
+- Library: React (Functional Components) 
+- Styling: Tailwind CSS 
+- Language: TypeScript 
+- State Management: React Hooks (useState, useEffect) 
+
+## Project Structure
+
+- app/: Contains the main layout and the primary page route.
+- components/: Houses the Board, Column, and Card components for modular UI.
+- hooks/: Includes useKanban.ts for managing state and localStorage persistence.
+- types/: Defines the TypeScript interfaces for Tasks and Statuses.
+
+## Key Expectations Met
+- Server and Client Component Separation: The application correctly utilizes 'use client' directives only where interactivity is required.
+- Dynamic Rendering: The board updates dynamically as tasks are added, moved, or edited.
+- Loading and Empty States: Visual indicators are provided when the board is loading and when columns are empty.
+- Clean Code: The project follows a modular structure with clear separation of concerns.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (Latest LTS version recommended)
+- npm, yarn, or pnpm
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
+   git clone https://github.com/omonweb/Mini-Kanban.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Install dependencies:
+   npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server:
+   npm run dev
 
-## Learn More
+4. Access the application:
+   Open http://localhost:3000 in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is optimized for deployment on Vercel. You can connect your GitHub repository to Vercel for automatic deployments.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Developed by Om Arora
